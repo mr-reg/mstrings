@@ -1,0 +1,30 @@
+* Mstrings support for emacs
+This is the basic indentation support for the beautiful Common Lisp
+Mstrings library https://git.sr.ht/~shunter/mstrings in the Emacs lisp
+mode.
+
+Mstrings is nice-looking multiline string implementation. They usually started with the reader macro ~#M~
+
+Code just adds correct behaviour when you press <TAB> inside Mstring.
+
+* Example
+#+begin_src lisp
+(defun example (arg1 arg2)
+  #M"This is docstring in
+|Mstring format"
+  ...)
+#+end_src
+
+Press TAB:
+
+#+begin_src lisp
+(defun example (arg1 arg2)
+  #M"This is docstring in
+     Mstring format"
+  ...)
+#+end_src
+
+* P.S:
+The code now works only with the Common Lisp, currently there is no
+support for Mstrings in emacs-lisp itself.
+
