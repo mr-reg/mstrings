@@ -24,6 +24,16 @@ Press TAB:
   ...)
 #+end_src
 
+* Installation (use-package + straight)
+#+begin_src lisp
+(use-package mstrings
+  :straight (mstrings :type git :host github :repo "mr-reg/mstrings"))
+#+end_src
+
+* TODO list
+  * support indentation for multiple lines at once
+  * make it working with ~aggressive-indent~ package
+
 * P.S:
 The code now works only with the Common Lisp, currently there is no
 support for Mstrings in emacs-lisp itself.
