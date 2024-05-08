@@ -5,7 +5,7 @@ mode.
 
 Mstrings is nice-looking multiline string implementation. They usually started with the reader macro ~#M~
 
-Code just adds correct behaviour when you press <TAB> inside Mstring.
+My code just adds correct behaviour when you press <TAB> inside Mstring.
 
 * Example
 #+begin_src lisp
@@ -30,9 +30,9 @@ Press TAB:
   :straight (mstrings :type git :host github :repo "mr-reg/mstrings"))
 #+end_src
 
-* TODO list
+* Roadmap
   * support indentation for multiple lines at once
-  * make it working with ~aggressive-indent~ package
+  * make it working with the ~aggressive-indent~ package
 
 * P.S:
 The code now works only with the Common Lisp, currently there is no
